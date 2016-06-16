@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
     <title>Mobile first</title>
-    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
     <body>
         <header class="header">
@@ -17,8 +17,29 @@
         <section class="section-filters">
             <form>
                 <input type="text" placeholder="Max price" class="filtre filtre-price"/>
-                <select class="filter filter-country"></select>
-                <select class="filter filter-number"></select>
+
+                <select class="filter filter-country">
+                    <option value="value1">France</option> 
+                    <option value="value1">Etats unis</option> 
+                    <option value="value1">Angletterre</option> 
+                    <option value="value1">Japon</option> 
+                    <option value="value1">Chine</option> 
+                    <option value="value1">Brésil</option> 
+                    <option value="value1">Congo</option> 
+                </select>
+
+                <select class="filter filter-number">
+                    <option value="value1">Solitaire</option> 
+                    <option value="value1">En famille</option>
+                </select>
+
+                <select class="filter filter-temperature">
+                    <option value="value1">Froid</option> 
+                    <option value="value1">Chaud</option>
+                    <option value="value1">Tempéré</option>
+                </select>
+
+
 
             </form>
         </section>

@@ -1,0 +1,6 @@
+/* mobile */
+@media screen and (max-width: 640px) {
+	header {
+		@include main-back;
+	}
+}
