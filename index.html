@@ -3,65 +3,92 @@
 <head>
 <meta charset="UTF-8">
     <title>Mobile first</title>
-    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
     <body>
         <header class="header">
             <img src="img/logo.png" alt="logo" class="logo"/>
-            <form>
-                <input type="text" placeholder="Search" class="search"/>
-            </form>
-            <button class="button-connexion">connexion/inscription</button>
+                <input type="text" placeholder="Rechercher" class="search-desktop"/>
+            <button type="button" class="filters">Filters</button>
+            <button class="button-connexion">Connexion/Inscription</button>
         </header>
 
         <section class="section-filters">
             <form>
                 <input type="text" placeholder="Max price" class="filtre filtre-price"/>
-                <select class="filter filter-country"></select>
-                <select class="filter filter-number"></select>
 
+                <select class="filter filter-country">
+                    <option value="value1">France</option> 
+                    <option value="value1">Etats unis</option> 
+                    <option value="value1">Angletterre</option> 
+                    <option value="value1">Japon</option> 
+                    <option value="value1">Chine</option> 
+                    <option value="value1">Brésil</option> 
+                    <option value="value1">Congo</option> 
+                </select>
+
+                <select class="filter filter-number">
+                    <option value="value1">Solitaire</option> 
+                    <option value="value1">En famille</option>
+                </select>
+
+                <select class="filter filter-environment">
+                    <option value="value1">Montagne</option>
+                    <option value="value1">Plage</option>
+                    <option value="value1">Desert</option>
+                    <option value="value1">Forêt</option>
+                    <option value="value1">Urbain</option>
+                </select>
+
+                <select class="filter filter-temperature">
+                    <option value="value1">Froid</option> 
+                    <option value="value1">Chaud</option>
+                    <option value="value1">Tempéré</option>
+                </select>
             </form>
         </section>
 
         <section class="section-selection">
+
+            <input type="text" placeholder="Rechercher" class="search-mobile"/>
             <div class="selection-highlight">
-                <img src="img/highlight.">
+                <img src="img/desert-etats-unis-reduite.jpg">
                 <h3 class="title-destination"></h3>
                 <p class="highlight-description"></p>
             </div>
 
             <div class="selection">
-                <img src="img/selection1.">
+                <img src="img/mont-fuji-reduite.jpg">
                 <h3 class="title-destination"></h3>
                 <p class="selection-description"></p>
             </div>
 
             <div class="selection">
-                <img src="img/selection2.">
+                <img src="img/montagnes-reduite.jpg">
                 <h3 class="title-destination"></h3>
                 <p class="selection-description"></p>
             </div>
 
             <div class="selection">
-                <img src="img/selection3.">
+                <img src="img/moyen-orient-reduite.jpg">
                 <h3 class="title-destination"></h3>
                 <p class="selection-description"></p>
             </div>
 
             <div class="selection">
-                <img src="img/selection4.">
+                <img src="img/muraille-de-chine-reduite.jpg">
                 <h3 class="title-destination"></h3>
                 <p class="selection-description"></p>
             </div>
 
             <div class="selection">
-                <img src="img/selection5.">
+                <img src="img/seattle-reduite.jpg">
                 <h3 class="title-destination"></h3>
                 <p class="selection-description"></p>
             </div>
 
             <div class="selection">
-                <img src="img/selection6.">
+                <img src="img/pyramides-reduite.jpg">
                 <h3 class="title-destination"></h3>
                 <p class="selection-description"></p>
             </div>
