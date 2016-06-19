@@ -57,6 +57,7 @@ table {
 .section-filters {
   display: none; }
 
+/* ----- Header ---- */
 .header {
   height: 60px;
   background: #f6f6f6;
@@ -92,12 +93,14 @@ table {
     font-size: 15px;
     padding: 5px 5px; }
 
+/* ----- Section Propositions ----- */
 .section-selection {
   background: #535353; }
 
+/* proposition principale */
 .selection-highlight {
   position: relative; }
-  .selection-highlight .title-destination {
+  .selection-highlight .titre-highlight {
     display: none; }
   .selection-highlight .highlight-description {
     display: none; }
@@ -114,6 +117,7 @@ table {
     font-weight: normal;
     letter-spacing: 1px; }
 
+/* propositions secondaires */
 .selection {
   position: relative; }
   .selection .texte {
@@ -135,26 +139,31 @@ table {
 /* tablette */
 @media screen and (min-width: 540px) {
   /* tablette */
-  .header .search-desktop {
-    display: inline;
-    margin-top: 3%;
-    margin-left: 65%;
-    border: none; }
-  .header .logo {
-    left: 7%; }
-  .header .button-filter {
-    display: none; }
-  .header .button-connexion {
-    background-color: #19a9e7;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 6px; } }
+  /* ----- Header ---- */
+  .header {
+    /* ----- Section Propositions ----- */ }
+    .header .search-desktop {
+      display: inline;
+      margin-top: 3%;
+      margin-left: 65%;
+      border: none; }
+    .header .logo {
+      left: 7%; }
+    .header .button-filter {
+      display: none; }
+    .header .button-connexion {
+      background-color: #19a9e7;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 6px; } }
 /* desktop */
 @media screen and (min-width: 1024px) {
-  /* desktop */ }
+  /* desktop */
+  /* ----- Header ---- */
+  /* ----- Section Propositions ----- */ }
 
 /*# sourceMappingURL=styles.css.map */

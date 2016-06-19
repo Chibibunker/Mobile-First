@@ -11,6 +11,8 @@
 	display: none;
 }
 
+/* ----- Header ---- */
+
 .header {
 	height: 60px;
 	background: $white;
@@ -32,7 +34,6 @@
 			z-index: 30;
 		}
 	}
-
 
 	.logo {
 		position: absolute;
@@ -56,14 +57,17 @@
 	}
 }
 
+/* ----- Section Propositions ----- */
+
 .section-selection {
 	background: $main-background;
 }
 
+/* proposition principale */
 .selection-highlight {
 	position: relative;
 
-	.title-destination {
+	.titre-highlight {
 		display: none;
 	}
 
@@ -86,6 +90,7 @@
 	}
 }
 
+/* propositions secondaires */
 .selection {
 	position: relative;
 
@@ -105,7 +110,7 @@
 	.selection-titre {
 
 	}
-	
+
 	.selection-description {
 
 	}
