@@ -1,33 +1,18 @@
 /* tablette */
+.button-connexion {
+    display: none;
+}
+
+.search-mobile {
+    display: none;
+}
 
 /* ----- Header ---- */
 
 .header {
     .search-desktop {
         display: inline;
-        margin-top: 3%;
-        margin-left: 65%;
-        border: none;
-
-    }
-
-    .logo {
-        left: 7%;
-    }
-
-    .button-filter {
-        display: none;
-    }
-
-    .button-connexion {
-        background-color: #19a9e7;
-        border: none;
-        color: white;
-        padding: 5px 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 6px;
+        @include search(17px, 50%, 35%);
     }
 
     /* ----- Section Propositions ----- */
