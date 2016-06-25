@@ -24,11 +24,44 @@ body {
 	-moz-box-shadow: inset 0px -1px 55px -26px rgba(0,0,0,0.75);
 	box-shadow: inset 0px -1px 55px -26px rgba(0,0,0,0.75);
 
+	.nav {
+		position: fixed;
+		box-sizing: border-box;
+		background: $main-background;
+		width: 250px;
+		height: 100%;
+		z-index: 3;
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+
+		.nav-ul {
+			position: absolute;
+			left: 60px;
+			top: 50%;
+			transform: translateY(-50%);
+			-webkit-transform: translateX(-50%);
+		}
+
+		.nav-li {
+			margin: 20px 0;
+			text-align: right;
+		}
+
+		.nav-link {
+			color: black;
+			text-transform:uppercase;
+			text-decoration: none;
+			font-size: 20px;
+			letter-spacing: .070em;
+		}
+	}
+
 	.hamburger {
 		position: absolute;
 		top: 25px;
 		left: 4%;
-		z-index: 20;
+		cursor: pointer;
+		z-index: 2;
 
 		.barre {
 			background: black;
@@ -91,6 +124,7 @@ body {
 
 	.search-mobile {
 		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
 		@include search(50%, 50%, 70%);
 	}
 }
