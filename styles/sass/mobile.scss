@@ -24,31 +24,42 @@ body {
 	-moz-box-shadow: inset 0px -1px 55px -26px rgba(0,0,0,0.75);
 	box-shadow: inset 0px -1px 55px -26px rgba(0,0,0,0.75);
 
-	.nav {
+	.navigation.isOpen {
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+	}
+
+	.navigation {
 		position: fixed;
 		box-sizing: border-box;
-		background: $main-background;
+		background: #555;
+		padding-left: 50px;
 		width: 250px;
 		height: 100%;
-		z-index: 3;
+		z-index: 2;
+
+		transition: transform .6s ease-in-out;
+		-webkit-transition: transform .6s ease-in-out;
+
 		transform: translateX(-100%);
 		-webkit-transform: translateX(-100%);
 
-		.nav-ul {
+		.navigation-ul {
 			position: absolute;
 			left: 60px;
 			top: 50%;
+
 			transform: translateY(-50%);
-			-webkit-transform: translateX(-50%);
+			-webkit-transform: translateY(-50%);
 		}
 
-		.nav-li {
-			margin: 20px 0;
+		.navigation-li {
+			margin: 30px 0;
 			text-align: right;
 		}
 
-		.nav-link {
-			color: black;
+		.navigation-link {
+			color: $white;
 			text-transform:uppercase;
 			text-decoration: none;
 			font-size: 20px;
@@ -61,7 +72,14 @@ body {
 		top: 25px;
 		left: 4%;
 		cursor: pointer;
-		z-index: 2;
+		z-index: 3;
+
+		transition: background .3s ease-in-out;
+		-webkit-transition: background .3s ease-in-out;
+
+		.barre.white {
+			background: #fff;
+		}
 
 		.barre {
 			background: black;
@@ -123,9 +141,10 @@ body {
 	}
 
 	.search-mobile {
+		@include search(50%, 50%, 70%);
+
 		transform: translateX(-50%);
 		-webkit-transform: translateX(-50%);
-		@include search(50%, 50%, 70%);
 	}
 }
 

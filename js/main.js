@@ -1,3 +1,6 @@
 $(document).ready(function() {
-    alert('coucou');
+    $('.hamburger').click(function() {
+        $('.navigation').toggleClass('isOpen');
+        $('.barre').toggleClass('white');
+    });
 });

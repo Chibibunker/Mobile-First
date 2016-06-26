@@ -67,26 +67,32 @@ body {
   -webkit-box-shadow: inset 0px -1px 55px -26px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px -1px 55px -26px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px -1px 55px -26px rgba(0, 0, 0, 0.75); }
-  .header .nav {
+  .header .navigation.isOpen {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); }
+  .header .navigation {
     position: fixed;
     box-sizing: border-box;
-    background: #e6e6e6;
+    background: #555;
+    padding-left: 50px;
     width: 250px;
     height: 100%;
-    z-index: 3;
+    z-index: 2;
+    transition: transform .6s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%); }
-    .header .nav .nav-ul {
+    .header .navigation .navigation-ul {
       position: absolute;
       left: 60px;
       top: 50%;
       transform: translateY(-50%);
-      -webkit-transform: translateX(-50%); }
-    .header .nav .nav-li {
-      margin: 20px 0;
+      -webkit-transform: translateY(-50%); }
+    .header .navigation .navigation-li {
+      margin: 30px 0;
       text-align: right; }
-    .header .nav .nav-link {
-      color: black;
+    .header .navigation .navigation-link {
+      color: white;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 20px;
@@ -96,7 +102,11 @@ body {
     top: 25px;
     left: 4%;
     cursor: pointer;
-    z-index: 2; }
+    z-index: 3;
+    transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out; }
+    .header .hamburger .barre.white {
+      background: #fff; }
     .header .hamburger .barre {
       background: black;
       width: 25px;
@@ -140,8 +150,6 @@ body {
   .selection-highlight .highlight-description {
     display: none; }
   .selection-highlight .search-mobile {
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -152,7 +160,9 @@ body {
     box-sizing: border-box;
     font-size: 12px;
     font-weight: normal;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); }
 
 /* propositions secondaires */
 .selection {
