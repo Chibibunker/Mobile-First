@@ -1,3 +1,8 @@
+/* variables sass */
+/* variables */
+/* mixins */
+/* mixins */
+/* reset css */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,41 +47,188 @@ table {
   border-spacing: 0; }
 
 /* mobile */
+/* mobile */
+.button-connexion {
+  display: none; }
+
+.search-desktop {
+  display: none; }
+
+.section-filters {
+  display: none; }
+
+body {
+  font-family: Helvetica; }
+
+/* ----- Header ---- */
 .header {
-  background-color: #bcbcbc;
-  height: 60px; }
+  height: 60px;
+  background: white;
+  -webkit-box-shadow: inset 0px -1px 55px -26px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px -1px 55px -26px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -1px 55px -26px rgba(0, 0, 0, 0.75); }
+  .header .navigation.isOpen {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); }
+  .header .navigation {
+    position: fixed;
+    box-sizing: border-box;
+    background: #555;
+    padding-left: 50px;
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+    transition: transform .6s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%); }
+    .header .navigation .navigation-ul {
+      position: absolute;
+      left: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%); }
+    .header .navigation .navigation-li {
+      margin: 30px 0;
+      text-align: right; }
+    .header .navigation .navigation-link {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: .070em; }
+  .header .hamburger {
+    position: absolute;
+    top: 25px;
+    left: 4%;
+    cursor: pointer;
+    z-index: 3;
+    transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out; }
+    .header .hamburger .barre.white {
+      background: #fff; }
+    .header .hamburger .barre {
+      background: black;
+      width: 25px;
+      height: 3px;
+      margin-bottom: 3px;
+      z-index: 30; }
   .header .logo {
     position: absolute;
-    top: 5%;
+    top: 20px;
+    left: 15%; }
+  .header .button-filters {
+    position: absolute;
+    top: 17px;
+    right: 4%;
+    background-color: #05a2e5;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px; }
+
+/* ----- Section Propositions ----- */
+.section-selection {
+  background: #e6e6e6; }
+
+/* proposition principale */
+.selection-highlight {
+  position: relative; }
+  .selection-highlight .texte {
+    position: absolute;
+    left: 4%;
+    bottom: 1%;
+    background: #191919;
+    background: rgba(25, 25, 25, 0.65);
+    width: 92%;
+    height: 93%; }
+  .selection-highlight .titre-highlight {
+    display: none; }
+  .selection-highlight .highlight-description {
+    display: none; }
+  .selection-highlight .search-mobile {
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
-  .header .button-connexion {
-    display: none; }
-  .header .search-desktop {
-    display: none; }
+    width: 70%;
+    border: none;
+    border: solid 1px #929294;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); }
+
+/* propositions secondaires */
+.selection {
+  position: relative; }
+  .selection .texte {
+    position: absolute;
+    left: 4%;
+    bottom: 1%;
+    width: 92%;
+    height: 35%;
+    padding: 1% 1% 1% 3%;
+    background: #191919;
+    background: rgba(25, 25, 25, 0.65);
+    box-sizing: border-box;
+    color: white; }
+    @media screen and (max-width: 400px) {
+      .selection .texte {
+        height: 40%; } }
+  .selection .selection-titre {
+    font-size: 27px;
+    margin: 10px 0 15px 0;
+    color: white; }
+    @media screen and (max-width: 350px) {
+      .selection .selection-titre {
+        font-size: 20px;
+        margin: 5px 0 10px 0; } }
+  .selection .selection-description {
+    font-size: 16px;
+    color: #d7d8d8; }
+    @media screen and (max-width: 350px) {
+      .selection .selection-description {
+        font-size: 14px; } }
+
+.selection-img {
+  width: 92%;
+  margin: 4% 4% 0 4%; }
 
 /* tablette */
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 700px) {
+  /* tablette */
+  .button-connexion {
+    display: none; }
+
+  .search-mobile {
+    display: none; }
+
+  /* ----- Header ---- */
   .header {
-    background-color: #bcbcbc; }
+    /* ----- Section Propositions ----- */ }
     .header .search-desktop {
       display: inline;
-      margin-top: 3%;
-      margin-left: 65%;
-      border: none; }
-    .header .logo {
-      left: 7%; }
-    .header .button-filter {
-      display: none; }
-    .header .button-connexion {
-      background-color: #4CAF50;
+      position: absolute;
+      top: 17px;
+      left: 50%;
+      width: 35%;
       border: none;
-      color: white;
-      padding: 5px 10px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 6px; } }
+      border: solid 1px #929294;
+      padding: 5px 5px 5px 5px;
+      box-sizing: border-box;
+      font-size: 12px;
+      font-weight: normal;
+      letter-spacing: 1px; } }
 /* desktop */
+@media screen and (min-width: 1024px) {
+  /* desktop */
+  /* ----- Header ---- */
+  /* ----- Section Propositions ----- */ }
 
 /*# sourceMappingURL=styles.css.map */

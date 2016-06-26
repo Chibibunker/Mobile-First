@@ -1,7 +1,21 @@
-
+/* variables sass */
 @import "variables";
+
+/* mixins */
 @import "mixins";
+
+/* reset css */
 @import "reset";
+
+/* mobile */
 @import "mobile";
-@import "tablett";
-@import "desktop";
+
+/* tablette */
+@media screen and (min-width: 700px) {
+    @import "tablett";
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    @import "desktop";
+}

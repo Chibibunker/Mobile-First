@@ -1,33 +1,23 @@
 /* tablette */
-@media screen and (min-width: 540px) {
-    .header {
-        .search-desktop {
-            display: inline;
-            margin-top: 3%;
-            margin-left: 65%;
-            border: none;
+.button-connexion {
+    display: none;
+}
 
-        }
+.search-mobile {
+    display: none;
+}
 
-        .logo {
-            left: 7%;
-        }
+/* ----- Header ---- */
 
-        .button-filter {
-            display: none;
-        }
+.header {
+    .search-desktop {
+        display: inline;
+        @include search(17px, 50%, 35%);
+    }
 
-        .button-connexion {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 6px;
-        }
+    /* ----- Section Propositions ----- */
 
-        @include main-back;
+    .selection-highlight {
+
     }
 }
