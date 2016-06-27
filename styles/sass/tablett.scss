@@ -1,7 +1,4 @@
 /* tablette */
-.button-connexion {
-    display: none;
-}
 
 .search-mobile {
     display: none;
@@ -10,14 +7,56 @@
 /* ----- Header ---- */
 
 .header {
-    .search-desktop {
-        display: inline;
-        @include search(17px, 50%, 35%);
+
+    .button-filters {
+        display: none;
     }
 
-    /* ----- Section Propositions ----- */
+    .button-connexion {
+        display: none;
+    }
 
-    .selection-highlight {
+    .search-desktop {
+        display: inline;
+        @include search(17px, 50%, 46%);
+    }
+}
 
+/* ----- Section Filtres -----*/
+
+.section-filtres {
+    display: block;
+    text-decoration: none;
+}
+
+/* ----- Section Propositions ----- */
+.section-selection {
+    width: 70%;
+}
+
+/*proposition principale*/
+.selection-highlight {
+
+    .texte {
+        position: absolute;
+        left: 4%;
+        bottom: 1%;
+        width: 92%;
+        height: 35%;
+        padding: 1% 1% 1% 3%;
+        background: rgb(25, 25, 25);
+        background: rgba(25, 25, 25, .65);
+        box-sizing: border-box;
+        color: $white;
+    }
+
+    .titre-highlight {
+        display: block;
+        @include titre();
+    }
+
+    .highlight-description {
+        display: block;
+        @include description();
     }
 }
