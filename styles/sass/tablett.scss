@@ -25,12 +25,23 @@
 /* ----- Section Filtres -----*/
 
 .section-filtres {
+    float: left;
     display: block;
-    text-decoration: none;
+    width: 30%;
+    padding: 2% 2%;
+    box-sizing: border-box;
+    background: $white;
+    margin-top: 20px;
+
+    .filtre {
+        width: 90%;
+        margin: 20px 0;
+    }
 }
 
 /* ----- Section Propositions ----- */
 .section-selection {
+    float: right;
     width: 70%;
 }
 
@@ -58,5 +69,17 @@
     .highlight-description {
         display: block;
         @include description();
+    }
+}
+
+.selection {
+    width: 40%;
+
+    .selection-titre {
+        font-size: 20px;
+    }
+
+    .selection-description {
+        display: none;
     }
 }

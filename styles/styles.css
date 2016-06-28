@@ -227,11 +227,20 @@ body {
 
   /* ----- Section Filtres -----*/
   .section-filtres {
+    float: left;
     display: block;
-    text-decoration: none; }
+    width: 30%;
+    padding: 2% 2%;
+    box-sizing: border-box;
+    background: white;
+    margin-top: 20px; }
+    .section-filtres .filtre {
+      width: 90%;
+      margin: 20px 0; }
 
   /* ----- Section Propositions ----- */
   .section-selection {
+    float: right;
     width: 70%; }
 
   /*proposition principale*/
@@ -254,7 +263,14 @@ body {
   .selection-highlight .highlight-description {
     display: block;
     font-size: 16px;
-    color: #d7d8d8; } }
+    color: #d7d8d8; }
+
+  .selection {
+    width: 40%; }
+    .selection .selection-titre {
+      font-size: 20px; }
+    .selection .selection-description {
+      display: none; } }
 /* desktop */
 @media screen and (min-width: 1024px) {
   /* desktop */
