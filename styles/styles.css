@@ -233,10 +233,23 @@ body {
     padding: 2% 2%;
     box-sizing: border-box;
     background: white;
-    margin-top: 20px; }
+    margin-top: 3%; }
     .section-filtres .filtre {
+      background: white;
+      font-size: 14px;
+      padding: 5px;
       width: 90%;
-      margin: 20px 0; }
+      height: 20px;
+      margin: 10px 0 30px 0; }
+    .section-filtres .filtre-select {
+      background: transparent;
+      -webkit-appearance: button;
+      -webkit-border-radius: 2px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      height: 35px;
+      width: 96%; }
 
   /* ----- Section Propositions ----- */
   .section-selection {
@@ -265,12 +278,8 @@ body {
     font-size: 16px;
     color: #d7d8d8; }
 
-  .selection {
-    width: 40%; }
-    .selection .selection-titre {
-      font-size: 20px; }
-    .selection .selection-description {
-      display: none; } }
+  .selection .selection-titre {
+    font-size: 20px; } }
 /* desktop */
 @media screen and (min-width: 1024px) {
   /* desktop */
