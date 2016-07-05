@@ -38,36 +38,53 @@
 
         <section class="section-filtres">
             <form>
+                <label>Prix maximum :</label>
                 <input type="text" placeholder="Max price" class="filtre filtre-price"/>
 
-                <select class="filtre filtre-pays">
-                    <option value="pays">France</option>
-                    <option value="pays">Etats unis</option>
-                    <option value="pays">Angletterre</option>
-                    <option value="pays">Japon</option>
-                    <option value="pays">Chine</option>
-                    <option value="pays">Brésil</option>
-                    <option value="pays">Norvège</option>
-                </select>
+                <div class="form-wrap">
+                    <label>Pays :</label>
+                    <select class="filtre filtre-select">
+                        <option value="pays">France</option>
+                        <option value="pays">Etats unis</option>
+                        <option value="pays">Angletterre</option>
+                        <option value="pays">Japon</option>
+                        <option value="pays">Chine</option>
+                        <option value="pays">Brésil</option>
+                        <option value="pays">Norvège</option>
+                    </select>
+                </div>
 
-                <select class="filtre filtre-nombre">
-                    <option value="nombre">Solitaire</option>
-                    <option value="nombre">En famille</option>
-                </select>
 
-                <select class="filtre filtre-environment">
-                    <option value="environnement">Montagne</option>
-                    <option value="environnement">Plage</option>
-                    <option value="environnement">Desert</option>
-                    <option value="environnement">Forêt</option>
-                    <option value="environnement">Urbain</option>
-                </select>
+                <div class="form-wrap">
+                    <label>À combien ?</label>
+                    <select class="filtre filtre-select">
+                        <option value="nombre">Seul</option>
+                        <option value="nombre">En famille</option>
+                    </select>
+                </div>
 
-                <select class="filtre filtre-temperature">
-                    <option value="température">Froid</option>
-                    <option value="température">Chaud</option>
-                    <option value="température">Tempéré</option>
-                </select>
+
+                <div class="form-wrap">
+                    <label>Environnement :</label>
+                    <select class="filtre filtre-select">
+                        <option value="environnement">Montagne</option>
+                        <option value="environnement">Plage</option>
+                        <option value="environnement">Desert</option>
+                        <option value="environnement">Forêt</option>
+                        <option value="environnement">Urbain</option>
+                    </select>
+                </div>
+
+
+                <div class="form-wrap">
+                    <label>Température :</label>
+                    <select class="filtre filtre-select">
+                        <option value="température">Froid</option>
+                        <option value="température">Chaud</option>
+                        <option value="température">Tempéré</option>
+                    </select>
+                </div>
+
             </form>
         </section>
 

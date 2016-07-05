@@ -31,11 +31,26 @@
     padding: 2% 2%;
     box-sizing: border-box;
     background: $white;
-    margin-top: 20px;
+    margin-top: 3%;
 
     .filtre {
+        background: $white;
+        font-size: 14px;
+        padding: 5px;
         width: 90%;
-        margin: 20px 0;
+        height: 20px;
+        margin: 10px 0 30px 0;
+    }
+
+    .filtre-select {
+        background: transparent;
+        -webkit-appearance: button;
+        -webkit-border-radius: 2px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        height: 35px;
+        width: 96%;
     }
 }
 
@@ -73,13 +88,8 @@
 }
 
 .selection {
-    width: 40%;
 
     .selection-titre {
         font-size: 20px;
-    }
-
-    .selection-description {
-        display: none;
     }
 }
