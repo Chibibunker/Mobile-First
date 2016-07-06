@@ -1,0 +1,24 @@
+{
+  "name": "mobile-first",
+  "version": "1.0.0",
+  "description": "a project in mobile first",
+  "main": "main.js",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chibibunker/Mobile-First.git"
+  },
+  "author": "Thomas Le Scouarnec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chibibunker/Mobile-First/issues"
+  },
+  "homepage": "https://github.com/Chibibunker/Mobile-First#readme"
+}
