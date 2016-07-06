@@ -9,3 +9,13 @@
 
 /* mobile */
 @import "mobile";
+
+/* tablette */
+@media screen and (min-width: 700px) {
+    @import "tablett";
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    @import "desktop";
+}
