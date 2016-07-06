@@ -6,7 +6,17 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['styles/sass/*.scss'],
-                tasks: ['sass', 'cssmin']
+                tasks: ['sass', 'cssmin', 'uglify']
+            }
+        },
+        uglify: {
+            options: {
+                manage: false
+            },
+            my_target: {
+                files: {
+                    'js/main.min.js' : ['js/main.js']
+                }
             }
         },
         sass: {
@@ -32,6 +42,7 @@ module.exports = function(grunt) {
 
     // Load plugins
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
