@@ -3,9 +3,9 @@
 
 ###Installation
 
-Peut être que la commande "npm install" sera necessaire.
-Néanmoins j'ai pu faire fonctionner le projet sans cette
-commande.
+La commande "npm install" n'est pas necessaire.
+Pas de serveur neccessaire.
+On peut se contenter de double clicker sur index.html.
 
 ###Principe de l'application:
 
