@@ -2,4 +2,34 @@
 
 /* ----- Header ---- */
 
+/* ----- Section Filtres -----*/
+
+.section-filtres {
+    width: 300px;
+}
+
 /* ----- Section Propositions ----- */
+
+/* propositions secondaires */
+.selection {
+  float: left;
+  width: 47%;
+  margin-left: 2%;
+
+  .selection-img {
+    width: 92%;
+  }
+
+  .selection-titre {
+
+    @include titre();
+     font-size: 20px;
+     margin: 5px 0 10px 0;
+  }
+
+  .selection-description {
+
+    @include description();
+     font-size: 14px;
+  }
+}
